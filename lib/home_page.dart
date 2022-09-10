@@ -50,14 +50,14 @@ class _HomePageState extends State<HomePage> {
                     child: Container(
                       width: 240,
                       height: 45,
-                      child: FlatButton(
-                        onPressed: () {
+                      color: Colors.lightBlue,
+                      child: InkWell(
+                        onTap: () {
                           Navigator.pushNamed(
                               context, login_signup_page.routeName);
                           pass = doctor;
                         },
                         child: Text(doctor),
-                        color: Colors.lightBlue,
                       ),
                     ),
                   ),
@@ -72,14 +72,14 @@ class _HomePageState extends State<HomePage> {
                     child: Container(
                       width: 240,
                       height: 45,
-                      child: FlatButton(
-                        onPressed: () {
+                      color: Colors.lightBlue,
+                      child: InkWell(
+                        onTap: () {
                           Navigator.pushNamed(
                               context, login_signup_page.routeName);
                           pass = patient;
                         },
                         child: Text(patient),
-                        color: Colors.lightBlue,
                       ),
                     ),
                   ),

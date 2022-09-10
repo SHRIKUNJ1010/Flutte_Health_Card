@@ -256,15 +256,16 @@ class _signup_pageState extends State<signup_page> {
             },
           ),
           SizedBox(height: 10),
-          RaisedButton(
-            onPressed: () {
-              // Validate returns true if the form is valid, otherwise false.
-              if (_formKey.currentState.validate()) {
-                Navigator.pushNamed(context, login_page.routeName);
-              }
-            },
-            child: Text('Sign Up'),
+          Container(
             color: Colors.lightBlue,
+            child: InkWell(
+              onTap: () {
+                if (_formKey.currentState.validate()) {
+                  Navigator.pushNamed(context, login_page.routeName);
+                }
+              },
+              child: Text('Sign Up'),
+            ),
           ),
           SizedBox(
             height: 10,

@@ -84,14 +84,16 @@ Form form(BuildContext context) {
           flex: 2,
           child: SizedBox(height: 110),
         ),
-        RaisedButton(
-          onPressed: () {
-            if (_formKey.currentState.validate()) {
-              Navigator.pushNamed(context, Patient_app_Navigation.routeName);
-            }
-          },
-          child: Text('Login'),
+        Container(
           color: Colors.lightBlue,
+          child: InkWell(
+            onTap: () {
+              if (_formKey.currentState.validate()) {
+                Navigator.pushNamed(context, Patient_app_Navigation.routeName);
+              }
+            },
+            child: Text('Login'),
+          ),
         ),
         Expanded(
           flex: 4,

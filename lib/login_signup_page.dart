@@ -49,12 +49,12 @@ Scaffold build_login_signup_page(BuildContext context) {
                   child: Container(
                     width: 240,
                     height: 45,
-                    child: FlatButton(
-                      onPressed: () {
+                    color: Colors.lightBlue,
+                    child: InkWell(
+                      onTap: () {
                         Navigator.pushNamed(context, login_page.routeName);
                       },
                       child: Text(login),
-                      color: Colors.lightBlue,
                     ),
                   ),
                 ),
@@ -69,12 +69,12 @@ Scaffold build_login_signup_page(BuildContext context) {
                   child: Container(
                     width: 240,
                     height: 45,
-                    child: FlatButton(
-                      onPressed: () {
+                    color: Colors.lightBlue,
+                    child: InkWell(
+                      onTap: () {
                         Navigator.pushNamed(context, signup_page.routeName);
                       },
                       child: Text(sigup),
-                      color: Colors.lightBlue,
                     ),
                   ),
                 ),

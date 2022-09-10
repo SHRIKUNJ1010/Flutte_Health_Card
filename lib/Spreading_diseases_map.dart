@@ -22,7 +22,7 @@ class Spreading_diseases_mapState extends State<Spreading_diseases_map> {
   }
 }
 
-  Widget Spreading_diseases(BuildContext context)
+  /*Widget Spreading_diseases(BuildContext context)
   {
     return AnimatedPositioned(
         duration: duration,
@@ -75,5 +75,5 @@ class Spreading_diseases_mapState extends State<Spreading_diseases_map> {
           ),
         ),
         );
-  }
-}
+  }*/
+
